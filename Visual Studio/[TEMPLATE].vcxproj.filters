@@ -2,20 +2,43 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="..\Pubc\Version.h">
-      <Filter>Core</Filter>
+      <Filter>Version</Filter>
     </ClInclude>
     <ClInclude Include="..\Pubc\Register.h">
-      <Filter>Core</Filter>
+      <Filter>Version</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Core">
+    <Filter Include="Version">
       <UniqueIdentifier>{ee8256a8-4eda-42a0-825e-5d369a9bedf4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Pubc\Version.cpp">
-      <Filter>Core</Filter>
+      <Filter>Version</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <BRVersionDef Include="..\..\BlackRoot\Meta\.brversion">
+      <Filter>Version</Filter>
+    </BRVersionDef>
+  </ItemGroup>
+  <ItemGroup>
+    <BRMetaDef Include="..\..\BlackRoot\Meta\.brmeta">
+      <Filter>Version</Filter>
+    </BRMetaDef>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Meta\libraries.json">
+      <Filter>Version</Filter>
+    </None>
+    <None Include="..\Meta\contributors.json">
+      <Filter>Version</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Meta\licence_name.txt">
+      <Filter>Version</Filter>
+    </Text>
   </ItemGroup>
 </Project>
